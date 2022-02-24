@@ -6,14 +6,16 @@ using System.Web.Mvc;
 
 namespace EAPClient.Controllers
 {
+
     public class EmployeeController : Controller
     {
         // GET: Employee
         public ActionResult Index()
         {
+            ServiceClient.Service1Client service1Client = new ServiceClient.Service1Client();
             return View();
         }
-        public ActionResult Emloyloyee()
+        public ActionResult Create()
         {
             return View();
         }
